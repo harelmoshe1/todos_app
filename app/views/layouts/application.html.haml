@@ -1,0 +1,13 @@
+%html
+  %head
+    %title
+      = stylesheet_link_tag('application', media: 'all', 'data-turbolinks-track' => true)
+      = javascript_include_tag('application', 'data-turbolinks-track' => true)
+      = csrf_meta_tags
+      = 'TodoApp'
+  %body
+    %main-container
+      .container
+        .row
+          .col-xs-3 Tealeaf Academy Todo
+          .col-xs-9.= yield
